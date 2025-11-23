@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meine Firma — Moderne Webseite</title>
+  <meta name="description" content="Moderne, responsive Webseite für Ihr Unternehmen" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Meine Firma</a>
+      <nav class="nav">
+        <button id="nav-toggle" aria-label="Menü öffnen">☰</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Moderne Webpräsenz für Ihre Kunden</h1>
+        <p class="lead">Schnell, elegant und vollständig responsiv — bereit, Ihr Angebot zu präsentieren.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#services">Leistungen ansehen</a>
+          <a class="btn btn-ghost" href="#contact">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Unsere Highlights</h2>
+        <p class="section-sub">Design, Performance und einfache Wartbarkeit — paketweise oder individuell.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Schnell & Responsiv</h3>
+            <p>Optimiert für alle Bildschirmgrößen, mit Fokus auf Ladezeit und Lesbarkeit.</p>
+          </article>
+          <article class="card">
+            <h3>Modernes Design</h3>
+            <p>Klares Layout, typografische Hierarchie und stimmige Farbwelt.</p>
+          </article>
+          <article class="card">
+            <h3>Einfache Anpassung</h3>
+            <p>Komponentenbasiert aufgebaut — Inhalte, Farben und Texte sind leicht zu ändern.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Über uns</h2>
+        <p>Wir entwickeln Webseiten, die sowohl Kunden als auch Suchmaschinen gefallen. Unser Fokus liegt auf Nutzerfreundlichkeit und Konversion.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <p>Schreiben Sie uns — wir melden uns innerhalb von 24 Stunden.</p>
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E‑Mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Nachricht senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Meine Firma — Alle Rechte vorbehalten</p>
+      <p class="footer-contact">Kontakt: <a href="mailto:info@meinefirma.de">info@meinefirma.de</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
